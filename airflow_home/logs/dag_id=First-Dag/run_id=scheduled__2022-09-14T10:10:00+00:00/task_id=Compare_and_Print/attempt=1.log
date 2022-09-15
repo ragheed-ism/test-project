@@ -1,0 +1,24 @@
+[2022-09-14T13:15:57.680+0300] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: First-Dag.Compare_and_Print scheduled__2022-09-14T10:10:00+00:00 [queued]>
+[2022-09-14T13:15:57.691+0300] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: First-Dag.Compare_and_Print scheduled__2022-09-14T10:10:00+00:00 [queued]>
+[2022-09-14T13:15:57.691+0300] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-14T13:15:57.691+0300] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-14T13:15:57.691+0300] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-14T13:15:57.711+0300] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): Compare_and_Print> on 2022-09-14 10:10:00+00:00
+[2022-09-14T13:15:57.712+0300] {standard_task_runner.py:52} INFO - Started process 13641 to run task
+[2022-09-14T13:15:57.716+0300] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'First-Dag', 'Compare_and_Print', 'scheduled__2022-09-14T10:10:00+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/First_Dag.py', '--cfg-path', '/tmp/tmppj_6umen', '--error-file', '/tmp/tmpagyatmvp']
+[2022-09-14T13:15:57.716+0300] {standard_task_runner.py:80} INFO - Job 80: Subtask Compare_and_Print
+[2022-09-14T13:15:57.767+0300] {task_command.py:371} INFO - Running <TaskInstance: First-Dag.Compare_and_Print scheduled__2022-09-14T10:10:00+00:00 [running]> on host DESKTOP-6F0IB4Q.localdomain
+[2022-09-14T13:15:57.827+0300] {taskinstance.py:1581} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=First-Dag
+AIRFLOW_CTX_TASK_ID=Compare_and_Print
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-14T10:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-14T10:10:00+00:00
+[2022-09-14T13:15:57.831+0300] {logging_mixin.py:115} INFO - The sum of odd numbers is : 1
+[2022-09-14T13:15:57.831+0300] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-14T13:15:57.837+0300] {taskinstance.py:1407} INFO - Marking task as SUCCESS. dag_id=First-Dag, task_id=Compare_and_Print, execution_date=20220914T101000, start_date=20220914T101557, end_date=20220914T101557
+[2022-09-14T13:15:57.887+0300] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-14T13:15:57.904+0300] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

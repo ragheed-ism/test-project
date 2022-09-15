@@ -1,0 +1,24 @@
+[2022-09-14T11:45:03.260+0300] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Second_Dag.Random_Number_1_10 scheduled__2022-09-14T08:40:00+00:00 [queued]>
+[2022-09-14T11:45:03.267+0300] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Second_Dag.Random_Number_1_10 scheduled__2022-09-14T08:40:00+00:00 [queued]>
+[2022-09-14T11:45:03.267+0300] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-14T11:45:03.267+0300] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-14T11:45:03.267+0300] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-14T11:45:03.285+0300] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): Random_Number_1_10> on 2022-09-14 08:40:00+00:00
+[2022-09-14T11:45:03.286+0300] {standard_task_runner.py:52} INFO - Started process 1808 to run task
+[2022-09-14T11:45:03.289+0300] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Second_Dag', 'Random_Number_1_10', 'scheduled__2022-09-14T08:40:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/Second_Dag.py', '--cfg-path', '/tmp/tmpq3dse99l', '--error-file', '/tmp/tmp5h6jrz92']
+[2022-09-14T11:45:03.289+0300] {standard_task_runner.py:80} INFO - Job 9: Subtask Random_Number_1_10
+[2022-09-14T11:45:03.331+0300] {task_command.py:371} INFO - Running <TaskInstance: Second_Dag.Random_Number_1_10 scheduled__2022-09-14T08:40:00+00:00 [running]> on host DESKTOP-6F0IB4Q.localdomain
+[2022-09-14T11:45:03.380+0300] {taskinstance.py:1581} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Second_Dag
+AIRFLOW_CTX_TASK_ID=Random_Number_1_10
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-14T08:40:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-14T08:40:00+00:00
+[2022-09-14T11:45:03.380+0300] {logging_mixin.py:115} INFO - This is my random number between 1 and 10: 9
+[2022-09-14T11:45:03.381+0300] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-14T11:45:03.384+0300] {taskinstance.py:1407} INFO - Marking task as SUCCESS. dag_id=Second_Dag, task_id=Random_Number_1_10, execution_date=20220914T084000, start_date=20220914T084503, end_date=20220914T084503
+[2022-09-14T11:45:03.421+0300] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-14T11:45:03.446+0300] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
